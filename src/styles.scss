@@ -1,4 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'LondrinaShadow';
+    src: url("./assets/fonts/LondrinaShadow-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'VastShadow';
+    src: url("./assets/fonts/VastShadow-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansHebrewCondensed';
+    src: url("./assets/fonts/OpenSansHebrewCondensed-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, h1, h2, p, div{
     margin: 0;
 }

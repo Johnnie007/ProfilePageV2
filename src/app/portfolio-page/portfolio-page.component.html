@@ -1,16 +1,16 @@
 <div class="portfolio-page-container">
     <section class="main">
         <div class="portfolio">
-            <div class="left-star"><p>Mosaic Me</p></div>
+            <div class="left-star"><p>{{projects[secondIndex].name}}</p></div>
             <div class="main-star">
                 <div class="main-star-text">
-                    <h2 class="main-star-text__h2">FootPrint - Live</h2>
-                        <p class="main-star-text__p">Description: Carbon Output Tracker
-                        <br>Stack: Angular Spring Boot MySQL
-                        <br>Languages: Typescript, Java, SQL</p>
+                    <p class="main-star-text__header">{{projects[mainIndex].name}} - Live</p>
+                        <p class="main-star-text__description">Description: {{projects[mainIndex].description}}</p>
+                        <p class="main-star-text__stack">Stack: {{projects[mainIndex].stack}}</p>
+                        <p class="main-star-text__language">Language: {{projects[mainIndex].languages}}</p>
                 </div>
             </div>
-            <div class="right-star"><p>Archive</p></div>
+            <div class="right-star"><p>{{projects[thirdIndex].name}}</p></div>
         </div>
     </section>
 
