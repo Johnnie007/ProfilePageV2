@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio-page',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio-page.component.scss']
 })
 export class PortfolioPageComponent {
+
+  @Input() callbackFn: ()=>void;
+  
   projects = [
    {
     "name": "Footprint",
@@ -16,14 +19,14 @@ export class PortfolioPageComponent {
    }, 
    {
     "name": "Mosaic Me",
-    "description": "Converts any image into a Mosaic",
+    "description": "Converts image into a Mosaic",
     "stack": "React",
     "languages": "Javascript",
     "link": "https://johnnie007.github.io/mosaic-me/#/"
    }, 
    {
     "name": "Archive",
-    "description": "Various projects that were built using differnt types of langauages",
+    "description": "Various projects",
     "stack": "Varies",
     "languages": "Varies",
     "link": "https://github.com/Johnnie007?tab=repositories"
@@ -33,19 +36,5 @@ export class PortfolioPageComponent {
   mainIndex = 0;
   secondIndex = 1;
   thirdIndex = 2;
-
-  counterClockWise(){
-    let holder = this.mainIndex;
-    this.mainIndex = this.secondIndex;
-    this.secondIndex = this.thirdIndex;
-    this.thirdIndex = holder;
-  }
-
-  clockWise(){
-    let holder = this.mainIndex;
-    this.mainIndex = this.thirdIndex;
-    this.thirdIndex = this.secondIndex
-    this.secondIndex = holder;
-  }
 
 }

@@ -1,15 +1,8 @@
-<div class="home-page-container">
-   <section class="header">
-    <div class="header_div">
-    <p class="name">JOHNNIE HICKS</p>
-    <p class="role">FULLSTACK DEVELOPER</p>
-    </div>
-        <div class="animation">
-            <img class="astro" src="../../assets/images/Group.svg" alt="">
-        </div>
-   </section>
-   <section class="footer">
-    <a class="link" routerLink="/portfolio">PORTFOLIO</a>
-    <a class="link" href="https://www.linkedin.com/in/johnnie-hicks-a3990320a/" target="_blank">LINKEDIN </a>
+<div>
+    <section id="header" class="header-visible">
+        <app-header  [callbackFunction]="this.navigateToPortfolio"></app-header>
+    </section>
+   <section  id="portfolio" class="portfolio">
+        <app-portfolio-page  [callbackFn]="this.backToTop"></app-portfolio-page>
    </section>
 </div>

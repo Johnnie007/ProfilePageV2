@@ -28,9 +28,21 @@
     height: 80vh;
 }
 
-.main-star{
+.left-star, .right-star{
     width: 35rem;
-    height: 35rem;
+    height: 27rem;
+    background-image: url(../../assets/images/star.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-star-test{
+    width: 45rem;
+    height: 37rem;
     background-image: url(../../assets/images/star.svg);
     background-position: center;
     background-size: contain;
@@ -69,35 +81,83 @@
 
    &__header{
     font-family:"VastShadow";
-    font-size: 2em;
+    font-size: 1.25em;
     text-align: center;
     padding-bottom: 1rem;
    }
 }
 
-.left-star{
-    width: 25rem;
-    height: 35vh;
-    background-image: url(../../assets/images/star.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 2rem;
+.left-star-text{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    height: 220px;
+   
+    &__description{
+    text-align: center;
+    font-family:"OpenSansHebrewCondensed";
+    line-height: 135%;
+    font-size: 0.9em;
+   }
+
+    &__stack{
+    text-align: center;
+    font-family:"OpenSansHebrewCondensed";
+    line-height: 135%;
+    font-size: 0.9em;
+   }
+
+    &__language{
+    text-align: center;
+    font-family:"OpenSansHebrewCondensed";
+    line-height: 135%;
+    font-size: 0.9em;
+   }
+
+   &__header{
+    font-family:"VastShadow";
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1rem;
+   }
 }
-.right-star{
-    width: 25rem;
-    height: 35vh;
-    background-image: url(../../assets/images/star.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 2rem;
+.right-star-text{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    height: 220px;
+   
+    &__description{
+    text-align: center;
+    font-family:"OpenSansHebrewCondensed";
+    line-height: 135%;
+    font-size: 0.9em;
+   }
+
+    &__stack{
+    text-align: center;
+    font-family:"OpenSansHebrewCondensed";
+    line-height: 135%;
+    font-size: 0.9em;
+   }
+
+    &__language{
+    text-align: center;
+    font-family:"OpenSansHebrewCondensed";
+    line-height: 135%;
+    font-size: 0.9em;
+   }
+
+   &__header{
+    font-family:"VastShadow";
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1rem;
+   }
 }
 
 .portfolio-footer{
