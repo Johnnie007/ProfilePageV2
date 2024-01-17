@@ -18,6 +18,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    //tablet
+    @media screen and (min-width: 768px) and  (max-width: 976px) {
+    flex-direction: column;
+    justify-content: center;
+    }
 }
 
 .astro{
@@ -25,6 +31,15 @@
     height: 21rem;
     margin-left: 2rem;
     animation: leftToRight 10s ease-in-out infinite;
+     
+    //tablet
+     @media screen and (min-width: 768px) and  (max-width: 976px) {
+        width: 12rem;
+        height: 21rem;
+        margin-top: 4rem;
+
+        animation: leftToRightTablet 10s ease-in-out infinite;
+     }
 }
 
 .animation{
@@ -35,11 +50,24 @@
     color: white;
     font-family:"LondrinaShadow";
     font-size: 6rem;
+     width: 12rem;
+    height: 21rem;
+
+    @media screen and (min-width: 768px) and  (max-width: 976px) {
+       font-size: 4rem;
+       width: 100%;
+       height: 6rem;
+     }
 }
 .role{
     color: white;
     font-family:"LondrinaShadow";
     font-size: 5rem;
+   
+    //tablet
+    @media screen and (min-width: 768px) and  (max-width: 976px) {
+        font-size: 4rem;
+     }
 }
 
 .footer{
@@ -49,6 +77,13 @@
     margin-right: 2rem;
     margin-left: 2rem;
     margin-top: 2rem;
+    
+    //tablet
+    @media screen and (min-width: 768px) and  (max-width: 976px) {
+       justify-content: space-between;
+       margin-right: 5rem;
+       margin-left: 3rem;
+     }
 }
 
 .link{
@@ -60,6 +95,11 @@
     &--pointer{
         cursor: pointer;
     }
+
+    //tablet
+    @media screen and (min-width: 768px) and  (max-width: 976px) {
+      font-size: 2.5rem;
+     }
 }
 
 @keyframes upAndDown{
@@ -67,8 +107,15 @@
     50% {transform: translateY(2.5rem);}
     100% {transform: translateY(0rem);}
 }
+
 @keyframes leftToRight{
     0% {transform: translateX(0rem);}
     50% {transform: translateX(2.5rem);}
+    100% {transform: translateX(0rem);}
+}
+
+@keyframes leftToRightTablet{
+    0% {transform: translateX(0rem);}
+    50% {transform: translateX(-7rem);}
     100% {transform: translateX(0rem);}
 }
