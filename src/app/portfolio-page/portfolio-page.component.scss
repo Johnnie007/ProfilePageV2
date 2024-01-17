@@ -20,6 +20,10 @@
     color: white;
     font-family:"LondrinaShadow";
     font-size: 5rem;
+
+    &--pointer{
+        cursor: pointer;
+    }
 }
 
 .portfolio{
@@ -85,6 +89,10 @@
     text-align: center;
     padding-bottom: 1rem;
    }
+
+   &--hover{
+    display: none;
+   }
 }
 
 .left-star-text{
@@ -122,6 +130,10 @@
     text-align: center;
     padding-bottom: 1rem;
    }
+
+   &--hover{
+    display: none;
+   }
 }
 .right-star-text{
     display: flex;
@@ -158,10 +170,64 @@
     text-align: center;
     padding-bottom: 1rem;
    }
+
+   &--hover{
+    display: none;
+   }
 }
 
 .portfolio-footer{
     height: 100%;
     display: flex;
     align-items: flex-end;
+}
+
+.main-star-text:hover .main-star-text--hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 220px;
+    font-family:"VastShadow";
+    font-size: 2.5em;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.right-star-text:hover .right-star-text--hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 220px;
+    font-family:"VastShadow";
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.left-star-text:hover .left-star-text--hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 220px;
+    font-family:"VastShadow";
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-star-text:hover .main-star-text__header, .main-star-text:hover  .main-star-text__description, .main-star-text:hover .main-star-text__stack, .main-star-text:hover .main-star-text__language{
+    display: none;
+}
+.right-star-text:hover .right-star-text__header, .right-star-text:hover  .right-star-text__description, .right-star-text:hover .right-star-text__stack, .right-star-text:hover .right-star-text__language{
+    display: none;
+}
+.left-star-text:hover .left-star-text__header, .left-star-text:hover  .left-star-text__description, .left-star-text:hover .left-star-text__stack, .left-star-text:hover .left-star-text__language{
+    display: none;
 }

@@ -7,6 +7,7 @@
                     <p class="left-star-text__description">Description: {{projects[secondIndex].description}}</p>
                     <p class="left-star-text__stack">Stack: {{projects[secondIndex].stack}}</p>
                     <p class="left-star-text__language">Language: {{projects[secondIndex].languages}}</p>
+                    <a class="left-star-text--hover" href="{{projects[secondIndex].link}}" target="_blank">Click me</a>
                 </div>
             </div>
             <div class="main-star-test">
@@ -15,20 +16,22 @@
                         <p class="main-star-text__description">Description: {{projects[mainIndex].description}}</p>
                         <p class="main-star-text__stack">Stack: {{projects[mainIndex].stack}}</p>
                         <p class="main-star-text__language">Language: {{projects[mainIndex].languages}}</p>
+                        <a class="main-star-text--hover" href="{{projects[mainIndex].link}}" target="_blank">Click me</a>
                 </div>
             </div>
             <div class="right-star">
-                <div class="left-star-text">
+                <div class="right-star-text">
                     <p class="right-star-text__header">{{projects[thirdIndex].name}} - Live</p>
                     <p class="right-star-text__description">Description: {{projects[thirdIndex].description}}</p>
                     <p class="right-star-text__stack">Stack: {{projects[thirdIndex].stack}}</p>
                     <p class="right-star-text__language">Language: {{projects[thirdIndex].languages}}</p>
+                    <a class="right-star-text--hover" href="{{projects[thirdIndex].link}}" target="_blank">Click me</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="portfolio-footer">
-        <a class="link" (click)="this.callbackFn()">BACK TO TOP</a>
+        <a class="link link--pointer" (click)="this.callbackFn()">BACK TO TOP</a>
     </section>
 </div>

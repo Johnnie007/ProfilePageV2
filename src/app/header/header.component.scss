@@ -55,15 +55,20 @@
     color: white;
     font-family:"LondrinaShadow";
     font-size: 3rem;
+    text-decoration: none;
+
+    &--pointer{
+        cursor: pointer;
+    }
 }
 
 @keyframes upAndDown{
-    0% {transform: translateY(0px);}
-    50% {transform: translateY(30px);}
-    100% {transform: translateY(-0px);}
+    0% {transform: translateY(0rem);}
+    50% {transform: translateY(2.5rem);}
+    100% {transform: translateY(0rem);}
 }
 @keyframes leftToRight{
-    0% {transform: translateX(0px);}
-    50% {transform: translateX(30px);}
-    100% {transform: translateX(-0px);}
+    0% {transform: translateX(0rem);}
+    50% {transform: translateX(2.5rem);}
+    100% {transform: translateX(0rem);}
 }
