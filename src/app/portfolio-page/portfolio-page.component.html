@@ -35,3 +35,30 @@
         <a class="link link--pointer" (click)="this.callbackFn()">BACK TO TOP</a>
     </section>
 </div>
+
+<div class="tablet-mobile-portfolio">
+
+        <div class="mobile-top-star" (click)="navigateToProject(0)">
+            <div class="mobile-top-star-text">
+                <p class="mobile-top-star-text__header">{{projects[mainIndex].name}}</p>
+                <p class="mobile-top-star-text--hover">Click me</p>
+            </div>
+        </div>
+        <div class="mobile-mid-star" (click)="navigateToProject(1)">
+            <div class="mobile-mid-star-text">
+                <p class="mobile-mid-star-text__header">{{projects[secondIndex].name}}</p>
+                <p class="mobile-mid-star-text--hover">Click me</p>
+            </div>
+        </div>
+        <div class="mobile-bottom-star" (click)="navigateToProject(2)">
+            <div class="mobile-bottom-star-text">
+                    <p class="mobile-bottom-star-text__header">{{projects[thirdIndex].name}}</p>
+                    <p class="mobile-bottom-star-text--hover">Click me</p>
+            </div>
+        </div>
+    
+        <div class="mobile-portfolio-footer">
+            <a class="mobile-link link--pointer" (click)="this.callbackFn()">BACK TO TOP</a>
+        </div>
+
+</div>

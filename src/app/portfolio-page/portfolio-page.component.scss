@@ -9,6 +9,11 @@
     background-size: 70%;
     height: 100vh;
     width: 100%;
+
+      //tablet
+      @media screen and  (max-width: 1024px) {
+        display: none;
+       } 
 }
 
 .main{
@@ -62,8 +67,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 220px;
+    width: 18.75rem;
+    height: 13.75rem;
    
     &__description{
     text-align: center;
@@ -140,8 +145,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 220px;
+    width: 18.75rem;
+    height: 13.75rem;
    
     &__description{
     text-align: center;
@@ -187,8 +192,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 220px;
+    width: 18.75rem;
+    height: 13.75rem;
     font-family:"VastShadow";
     font-size: 2.5em;
     text-align: center;
@@ -200,8 +205,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 220px;
+    width: 18.75rem;
+    height: 13.75rem;
     font-family:"VastShadow";
     font-size: 2em;
     text-align: center;
@@ -213,8 +218,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 220px;
+    width: 18.75rem;
+    height: 13.75rem;
     font-family:"VastShadow";
     font-size: 2em;
     text-align: center;
@@ -230,4 +235,133 @@
 }
 .left-star-text:hover .left-star-text__header, .left-star-text:hover  .left-star-text__description, .left-star-text:hover .left-star-text__stack, .left-star-text:hover .left-star-text__language{
     display: none;
+}
+
+//tablet and mobile
+
+.tablet-mobile-portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    background-image: url(../../assets/images/space1.svg);
+    background-position: center;
+    background-size: 70%;
+    height: 100vh;
+    width: 100%;
+}
+
+.mobile-top-star{
+    width: 26rem;
+    height: 27rem;
+    background-image: url(../../assets/images/star.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-text--hover{
+        font-family:"VastShadow";
+        font-size: 1em;
+        text-align: center;
+        opacity: 0;
+        animation: fade-in-out 7s infinite;
+        animation-delay: 2s;
+    }
+}
+.mobile-mid-star{
+    width: 26rem;
+    height: 27rem;
+    background-image: url(../../assets/images/star.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-text--hover{
+        font-family:"VastShadow";
+        font-size: 1em;
+        text-align: center;
+        opacity: 0;
+        animation: fade-in-out 10s infinite;
+        animation-delay: 4s;
+    }
+}
+
+.mobile-bottom-star{
+    width: 26rem;
+    height: 27rem;
+    background-image: url(../../assets/images/star.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    &-text--hover{
+        font-family:"VastShadow";
+        font-size: 1em;
+        text-align: center;
+        opacity: 0;
+        animation: fade-in-out 12s infinite;
+        animation-delay: 5s;
+    }
+}
+
+.mobile-link{
+    color: white;
+    font-family:"LondrinaShadow";
+    font-size: 3rem;
+}
+
+.mobile-top-star-text__header{
+    font-family:"VastShadow";
+    font-size: 1.25em;
+    text-align: center;
+
+    @media screen and (min-width: 375px) {
+        font-size: 1em;
+    }
+   }
+
+.mobile-mid-star-text__header{
+    font-family:"VastShadow";
+    font-size: 1.25em;
+    text-align: center;
+
+    @media screen and (min-width: 375px) {
+        font-size: .9em;
+    }
+   }
+
+.mobile-bottom-star-text__header{
+    font-family:"VastShadow";
+    font-size: 1.25em;
+    text-align: center;
+
+    @media screen and (min-width: 375px) {
+        font-size: 1em;
+    }
+   }
+
+@keyframes fade-in-out {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }

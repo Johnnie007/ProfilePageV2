@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio-page',
@@ -6,6 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./portfolio-page.component.scss']
 })
 export class PortfolioPageComponent {
+  constructor(private router: Router){}
 
   @Input() callbackFn: ()=>void;
   
@@ -36,5 +38,9 @@ export class PortfolioPageComponent {
   mainIndex = 0;
   secondIndex = 1;
   thirdIndex = 2;
+
+  navigateToProject(space: number){
+    window.open(this.projects[space].link, "_blank")
+  }
 
 }
