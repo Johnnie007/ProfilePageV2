@@ -20,7 +20,6 @@
             "outputPath": "dist/profile-page",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "/https://johnnie007.github.io/ProfilePageV2/",
             "polyfills": [
               "zone.js"
             ],

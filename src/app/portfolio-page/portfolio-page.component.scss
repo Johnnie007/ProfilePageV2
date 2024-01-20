@@ -250,6 +250,11 @@
     background-size: 70%;
     height: 100vh;
     width: 100%;
+
+    //tablet
+    @media screen and  (min-width: 1024px) {
+        display: none;
+       } 
 }
 
 .mobile-top-star{
